@@ -5,7 +5,7 @@ import { deleteDoc, doc } from "firebase/firestore";
 import { useNavigation } from "@react-navigation/native";
 
 const Usuarios = ({ id, email, name, phone, onDelete }) => {
-    const navigation = useNavigation()
+  const navigation = useNavigation()
   const handleDelete = async () => {
     try {
       const userRef = doc(database, "usuarios", id);
